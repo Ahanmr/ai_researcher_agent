@@ -1,0 +1,13 @@
+[
+    {
+        "name": "research_orchestrator",
+        "module": "module_template",
+        "orchestrator_node_url": "http://localhost:7001",
+        "orchestrator_config": {
+            "config_name": "research_orchestrator_config",
+            "max_rounds": 3,
+            "workflow_type": "sequential",
+            "agent_coordination": "structured"
+        }
+    }
+]

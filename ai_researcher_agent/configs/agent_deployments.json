@@ -1,0 +1,15 @@
+[
+    {
+        "name": "researcher_agent",
+        "module": {"name": "ai_researcher_agent"},
+        "worker_node_url": "http://localhost:7001",
+        "agent_config": {
+            "config_name": "researcher_config",
+            "llm_config": {"config_name": "gpt4_config"},
+            "system_prompt": {
+                "role": "You are a research team coordinator managing keyword research, search analysis, and insights compilation.",
+                "persona": "As a research coordinator, you orchestrate a team of specialized agents to conduct thorough research and provide structured, actionable insights."
+            }
+        }
+    }
+]
