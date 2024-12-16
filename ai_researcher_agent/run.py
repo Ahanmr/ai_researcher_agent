@@ -19,7 +19,7 @@ import datetime
 from crewai_tools import (
     SerperDevTool,
     FileReadTool,
-    FileWriteTool
+    FileWriterTool
 )
 from langchain.tools import Tool
 
@@ -36,7 +36,7 @@ class ResearcherAgent:
         """Initialize research tools"""
         self.search_tool = SerperDevTool()
         self.file_read = FileReadTool()
-        self.file_write = FileWriteTool()
+        self.file_write = FileWriterTool()
 
     def setup_agents(self):
         """Initialize the research agents with CrewAI"""
